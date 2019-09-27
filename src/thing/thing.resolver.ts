@@ -20,7 +20,7 @@ export class ThingResolver {
 
   @Query(returns => Thing)
   async thingerror() {
-    throw new Error('problem factory!')
+    return new Error('problem factory!')
   }
 
 }
